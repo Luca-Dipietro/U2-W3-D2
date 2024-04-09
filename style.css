@@ -4,3 +4,25 @@
   padding: 20px;
   border-radius: 10px;
 }
+
+#counter {
+  width: 200px;
+  margin: 0 auto;
+}
+
+.card-body {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#counter .card-body h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+#counter .card-body p {
+  font-size: 1rem;
+  margin: 0;
+}

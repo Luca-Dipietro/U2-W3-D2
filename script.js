@@ -35,3 +35,20 @@ const removeName = function () {
 removeButton.addEventListener("click", removeName);
 
 // Esercizio 2
+
+const updateCounter = function () {
+  if (sessionStorage.getItem("counter")) {
+    let counter = parseInt(sessionStorage.getItem("counter"));
+    counter++;
+
+    sessionStorage.setItem("counter", counter);
+
+    document.querySelector("#counter h1").innerText = counter;
+  } else {
+    sessionStorage.setItem("counter", 0);
+  }
+};
+
+setInterval(updateCounter, 1000);
+
+window.onload = updateCounter;
